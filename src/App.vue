@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { useRoute } from 'vue-router'
+import LayoutContent from '@/layouts/LayoutContent.vue'
+import LayoutFull from '@/layouts/LayoutFull.vue'
+
+const route = useRoute()
 </script>
 
 <template>
-  <RouterView />
+  <LayoutFull v-if="route.meta.layout === 'full'" />
+  <LayoutContent v-else />
 </template>
 
 <style></style>

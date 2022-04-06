@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { NLayoutSider } from 'naive-ui'
+</script>
 
 <template>
-  <aside class="p-2 h-screen">aside</aside>
+  <n-layout-sider content-style="padding: 24px;">
+    Handian Bridge
+  </n-layout-sider>
 </template>

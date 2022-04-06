@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import AppHeader from '@/components/app/AppHeader.vue'
+import { NLayout } from 'naive-ui'
 import AppSideBar from '@/components/app/AppSideBar.vue'
+import AppHeader from '@/components/app/AppHeader.vue'
 import AppFooter from '@/components/app/AppFooter.vue'
+import AppContent from '@/components/app/AppContent.vue'
 </script>
 
 <template>
-  <div class="flex gap-4">
-    <AppSideBar class="w-64 bg-orange-500" />
-    <div class="app-body w-full mr-4">
-      <AppHeader class="bg-red-500 p-2 mt-4" />
-      <main class="main bg-blue-500 p-2 mt-2">
-        <RouterView />
-      </main>
-      <AppFooter class="bg-green-500 p-2 mt-2" />
-    </div>
-  </div>
+  <n-space vertical="" size="large">
+    <n-layout has-sider>
+      <app-side-bar />
+      <n-layout>
+        <app-header />
+        <app-content />
+        <app-footer />
+      </n-layout>
+    </n-layout>
+  </n-space>
 </template>

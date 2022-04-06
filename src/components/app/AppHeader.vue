@@ -1,9 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { NLayoutHeader } from 'naive-ui'
+</script>
 
 <template>
-  <header class="flex justify-start">
-    <router-link :to="{ name: 'home' }" class="flex items-center">
-      <p>Logo text</p>
-    </router-link>
-  </header>
+  <n-layout-header>Yiheyuan Road</n-layout-header>
 </template>
