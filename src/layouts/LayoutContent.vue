@@ -7,14 +7,14 @@ import AppContent from '@/components/app/AppContent.vue'
 </script>
 
 <template>
-  <n-space vertical="" size="large">
-    <n-layout has-sider>
-      <app-side-bar />
-      <n-layout>
-        <app-header />
-        <app-content />
-        <app-footer />
-      </n-layout>
+  <!--  <n-space vertical="" size="large">-->
+  <n-layout position="absolute" has-sider>
+    <app-side-bar />
+    <n-layout>
+      <app-header />
+      <app-content />
+      <app-footer />
     </n-layout>
-  </n-space>
+  </n-layout>
+  <!--  </n-space>-->
 </template>

@@ -1,3 +1,5 @@
+import { renderIcon } from '@/utils/utils'
+import { PersonOutline, LockClosedOutline } from '@vicons/ionicons5'
 export default [
   {
     path: '/login',
@@ -8,6 +10,7 @@ export default [
       title: 'Login',
       layout: 'full',
     },
+    icon: renderIcon(LockClosedOutline),
   },
   {
     path: '/register',
@@ -18,5 +21,6 @@ export default [
       title: 'Register',
       layout: 'full',
     },
+    icon: PersonOutline,
   },
 ]

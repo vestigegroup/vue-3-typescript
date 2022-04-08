@@ -1,5 +1,6 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main></main>
+  <main>its a main page</main>
 </template>
+e
